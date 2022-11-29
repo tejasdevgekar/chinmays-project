@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+
+  name: tejasdevgekarchinmaysproject-deployment
+
+  labels:
+
+    app: tejasdevgekarchinmaysproject
+
+spec:
+
+  replicas: 1
+
+  selector:
+
+    matchLabels:
+
+      app: tejasdevgekarchinmaysproject
+
+  template:
+
+    metadata:
+
+      labels:
+
+        app: tejasdevgekarchinmaysproject
+
+    spec:
+
+      containers:
+
+      - name: tejasdevgekarchinmaysproject
+
+        image: test2811.azurecr.io/tejasdevgekarchinmaysproject:9
+
+        ports:
+
+        - containerPort: 80
