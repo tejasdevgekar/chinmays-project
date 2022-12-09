@@ -35,6 +35,11 @@ spec:
       - name: tejasdevgekarchinmaysproject
 
         image: test2811.azurecr.io/tejasdevgekarchinmaysproject:9
+        
+        commands: 
+        
+        - "sleep"
+        - "6000"
 
         ports:
 
