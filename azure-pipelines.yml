@@ -53,7 +53,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'asdfa.test'
+    environment: 'tejasdevgekarchinmaysproject.test'
     strategy:
       runOnce:
         deploy:
