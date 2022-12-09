@@ -1,9 +1,5 @@
-FROM python
+FROM nginx
 
-COPY . .
+EXPOSE 80
 
-RUN chmod 700 manage.py
-
-RUN pip install django
-
-CMD ["./manage.py"]
+CMD ["nginx", "-g", "daemon off;"]
