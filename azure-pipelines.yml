@@ -11,7 +11,7 @@ resources:
 variables:
 
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '28b7cda7-5ee9-4955-93b2-49b53fd72759'
+  dockerRegistryServiceConnection: '28b7cda7-5ee9-4955-93b2-49b53fd72759' #why didn't i use variable :p
   imageRepository: 'tejasdevgekarchinmaysproject'
   containerRegistry: 'test2811.azurecr.io'
   dockerfilePath: '**/Dockerfile'
